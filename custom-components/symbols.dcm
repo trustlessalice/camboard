@@ -1,0 +1,12 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MK82FN256VLL15
+D NXP MK82FN256VLL15
+K ARM Cortex M4 MCU
+$ENDCMP
+#
+$CMP Serial-Flash
+D SPI / QuadSPI Flash IC
+$ENDCMP
+#
+#End Doc Library
