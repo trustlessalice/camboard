@@ -316,7 +316,6 @@ Wire Wire Line
 	2000 6250 2100 6250
 Wire Wire Line
 	2700 6250 2800 6250
-Connection ~ 2800 6250
 Wire Wire Line
 	3600 5800 4000 5800
 Wire Wire Line
@@ -344,7 +343,6 @@ F 3 "" H 2600 6800 50  0001 C CNN
 	1    2600 6800
 	1    0    0    -1  
 $EndComp
-Connection ~ 2600 6800
 Text Label 3150 6800 0    50   ~ 0
 VDD
 $Comp
@@ -1009,4 +1007,203 @@ Wire Wire Line
 Wire Wire Line
 	2300 800  2400 800 
 Connection ~ 2400 800 
+$Comp
+L SparkFun-Connectors:CONN_40 J2
+U 1 1 5C721151
+P 7100 700
+F 0 "J2" H 7050 650 45  0000 L TNN
+F 1 "CONN_40" H 6823 2692 45  0001 R CNN
+F 2 "Connector_FFC-FPC:Hirose_FH12-40S-0.5SH_1x40-1MP_P0.50mm_Horizontal" H 7100 4800 20  0001 C CNN
+F 3 "" H 7100 700 50  0001 C CNN
+	1    7100 700 
+	-1   0    0    1   
+$EndComp
+Text Label 6550 700  0    50   ~ 0
+LEDK
+Wire Wire Line
+	6500 700  7000 700 
+Text Label 6550 800  0    50   ~ 0
++24V
+Wire Wire Line
+	6500 800  7000 800 
+Connection ~ 2800 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5C7470F9
+P 7000 900
+F 0 "#PWR?" H 7000 650 50  0001 C CNN
+F 1 "GND" H 7005 727 50  0000 C CNN
+F 2 "" H 7000 900 50  0001 C CNN
+F 3 "" H 7000 900 50  0001 C CNN
+	1    7000 900 
+	0    1    1    0   
+$EndComp
+Connection ~ 2600 6800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C75BA30
+P 6250 950
+F 0 "#PWR?" H 6250 800 50  0001 C CNN
+F 1 "+3.3V" H 6265 1123 50  0000 C CNN
+F 2 "" H 6250 950 50  0001 C CNN
+F 3 "" H 6250 950 50  0001 C CNN
+	1    6250 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1000 6250 1000
+Wire Wire Line
+	6250 1000 6250 950 
+Wire Wire Line
+	7000 1100 7000 1200
+Connection ~ 7000 1200
+Wire Wire Line
+	7000 1200 7000 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5C76F8C0
+P 7000 1200
+F 0 "#PWR?" H 7000 950 50  0001 C CNN
+F 1 "GND" H 7005 1027 50  0000 C CNN
+F 2 "" H 7000 1200 50  0001 C CNN
+F 3 "" H 7000 1200 50  0001 C CNN
+	1    7000 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 1900 7000 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5C77658F
+P 7000 1900
+F 0 "#PWR?" H 7000 1650 50  0001 C CNN
+F 1 "GND" H 7005 1727 50  0000 C CNN
+F 2 "" H 7000 1900 50  0001 C CNN
+F 3 "" H 7000 1900 50  0001 C CNN
+	1    7000 1900
+	0    1    1    0   
+$EndComp
+Connection ~ 7000 1900
+Wire Wire Line
+	7000 2700 7000 2800
+Connection ~ 7000 2800
+Wire Wire Line
+	7000 2800 7000 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5C77D33F
+P 7000 2800
+F 0 "#PWR?" H 7000 2550 50  0001 C CNN
+F 1 "GND" H 7005 2627 50  0000 C CNN
+F 2 "" H 7000 2800 50  0001 C CNN
+F 3 "" H 7000 2800 50  0001 C CNN
+	1    7000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C780B97
+P 7000 3500
+F 0 "#PWR?" H 7000 3250 50  0001 C CNN
+F 1 "GND" H 7005 3327 50  0000 C CNN
+F 2 "" H 7000 3500 50  0001 C CNN
+F 3 "" H 7000 3500 50  0001 C CNN
+	1    7000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C7842D8
+P 7000 4200
+F 0 "#PWR?" H 7000 3950 50  0001 C CNN
+F 1 "GND" H 7005 4027 50  0000 C CNN
+F 2 "" H 7000 4200 50  0001 C CNN
+F 3 "" H 7000 4200 50  0001 C CNN
+	1    7000 4200
+	0    1    1    0   
+$EndComp
+Text Label 6550 1400 0    50   ~ 0
+R3
+Wire Wire Line
+	6500 1400 7000 1400
+Text Label 6550 1500 0    50   ~ 0
+R4
+Wire Wire Line
+	6500 1500 7000 1500
+Text Label 6550 1600 0    50   ~ 0
+R5
+Wire Wire Line
+	6500 1600 7000 1600
+Text Label 6550 1700 0    50   ~ 0
+R6
+Wire Wire Line
+	6500 1700 7000 1700
+Text Label 6550 1800 0    50   ~ 0
+R7
+Wire Wire Line
+	6500 1800 7000 1800
+Text Label 6550 2100 0    50   ~ 0
+G2
+Wire Wire Line
+	6500 2100 7000 2100
+Text Label 6550 2200 0    50   ~ 0
+G3
+Wire Wire Line
+	6500 2200 7000 2200
+Text Label 6550 2300 0    50   ~ 0
+G4
+Wire Wire Line
+	6500 2300 7000 2300
+Text Label 6550 2400 0    50   ~ 0
+G5
+Wire Wire Line
+	6500 2400 7000 2400
+Text Label 6550 2500 0    50   ~ 0
+G6
+Wire Wire Line
+	6500 2500 7000 2500
+Text Label 6550 2600 0    50   ~ 0
+G7
+Wire Wire Line
+	6500 2600 7000 2600
+Text Label 6550 3000 0    50   ~ 0
+B3
+Wire Wire Line
+	6500 3000 7000 3000
+Text Label 6550 3100 0    50   ~ 0
+B4
+Wire Wire Line
+	6500 3100 7000 3100
+Text Label 6550 3200 0    50   ~ 0
+B5
+Wire Wire Line
+	6500 3200 7000 3200
+Text Label 6550 3300 0    50   ~ 0
+B6
+Wire Wire Line
+	6500 3300 7000 3300
+Text Label 6550 3400 0    50   ~ 0
+B7
+Wire Wire Line
+	6500 3400 7000 3400
+Text Label 6550 3600 0    50   ~ 0
+PIXCLK
+Wire Wire Line
+	6500 3600 7000 3600
+Text Label 6550 3700 0    50   ~ 0
+DISP_ON
+Wire Wire Line
+	6500 3700 7000 3700
+Text Label 6550 3800 0    50   ~ 0
+HSYNC
+Wire Wire Line
+	6500 3800 7000 3800
+Text Label 6550 3900 0    50   ~ 0
+VSYNC
+Wire Wire Line
+	6500 3900 7000 3900
+Text Label 6550 4000 0    50   ~ 0
+DISP_EN
+Wire Wire Line
+	6500 4000 7000 4000
 $EndSCHEMATC
