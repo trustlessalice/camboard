@@ -9,4 +9,9 @@ $CMP Serial-Flash
 D SPI / QuadSPI Flash IC
 $ENDCMP
 #
+$CMP TPS61166
+D Constant current driver / backlight driver
+F http://www.ti.com/lit/ds/symlink/tps61166.pdf
+$ENDCMP
+#
 #End Doc Library
