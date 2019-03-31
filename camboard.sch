@@ -1579,17 +1579,6 @@ F 5 "KLZ2012MHR4R7WTD25" H 0   0   50  0001 C CNN "MPN"
 $EndComp
 Wire Wire Line
 	7450 950  7250 950 
-$Comp
-L power:+3.3V #PWR0135
-U 1 1 5C79CEEB
-P 6900 950
-F 0 "#PWR0135" H 6900 800 50  0001 C CNN
-F 1 "+3.3V" H 6915 1123 50  0000 C CNN
-F 2 "" H 6900 950 50  0001 C CNN
-F 3 "" H 6900 950 50  0001 C CNN
-	1    6900 950 
-	1    0    0    -1  
-$EndComp
 Connection ~ 7250 950 
 $Comp
 L Device:C_Small C15
@@ -1616,8 +1605,7 @@ F 3 "" H 6900 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 950  7250 950 
-Connection ~ 6900 950 
+	6600 950  6900 950 
 $Comp
 L Device:C_Small C16
 U 1 1 5C7DA1F1
@@ -2461,4 +2449,9 @@ F 3 "~" H 8700 950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 1300 4800
+Connection ~ 6900 950 
+Wire Wire Line
+	6900 950  7250 950 
+Text Label 6600 950  0    50   ~ 0
+VDD_REGIN
 $EndSCHEMATC
