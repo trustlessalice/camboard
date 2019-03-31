@@ -3,3 +3,4 @@
 *.xml
 *.kicad_pcb-bak
 bom/
+fp-info-cache
